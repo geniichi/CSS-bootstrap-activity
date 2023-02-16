@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+<style>
+    body {overflow-x:hidden;}
+    header{
+        background-color: #cfba51;
+    }
+
+    #motherAndchild{background: url('https://wowslider.com/sliders/demo-31/data1/images/bench560435.jpg');background-size: 96.5%;background-repeat: no-repeat;}
+    .myBtn{background-color: #AC843C;color: white;border-radius: 6px;border: none;padding: 2px;}
+    #money-sample {background: url('https://business.inquirer.net/files/2022/02/Philippine-peso-bills-620x349.png');background-repeat: no-repeat;
+      box-shadow:#AC843C 15px 15px;width:450px;border-radius:16px;}
+
+    #btn-quote{
+      background-color:#AC843C;
+      color:white;
+      font-size: 13px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-2 border-bottom">
+            <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                <img width="100px;" class="w-50" src="data:image/jpeg;base64,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">
+            </a>
+            <ul class="nav col-12 col-md-auto mt-4 justify-content-center mb-md-0">
+                <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">Why Pinay Peso</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">Pinay Stories Artcles</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">Insuravest</a></li>
+            </ul>
+
+            <div class="col-md-3 text-end" >
+                <button style="background-color: #AC843C; color: white;font-size:13px;" type="button" class="btn me-3 w-10 h-2 px-4" >+75675676575</button>
+                <button type="button" id="btn-quote" class="btn px-4">Get a quote</button>
+            </div>
+            </header>
+        </div>
+    </header>
+    <main>
+
+
+        <div class="row g-5" style="margin-left: 20px;">
+            <div class="col-md-6">
+              <h2 class="ms-3 mt-4">A world made for every family</h2>
+              <p class="ms-3">
+                We'll support every family, helping youget the best out of life through a variety of solutions catered to your needs and wants
+              </p>
+              <button class="myBtn ms-3 p-2">Learn More</button>
+            </div>
+
+            <div class="col-md-6 mt-5" id="motherAndchild" >
+              <h2 style="font-size:20px; color:white;" class="m-3">Are you a breadwinner for your family</h2>
+              <p style="font-size:13px; color:white;width:50%;" class="mt-4 ms-3">"I couldn't sleep, I had no peace of mind, I was wondering where I could borrow some money"</p>
+              <p style="font-size:13px; color:white;" class="ms-3 mt-4">- jho Valera</p>
+
+              <button class="myBtn p-2 m-2">Read More</button>
+            </div>
+      </div>
+
+
+      <div class="row g-5" style="margin-left: 20px; margin-top: 20px;">
+        <div class="col-md-6">
+          <h2 class="ms-3">Is this you?...</h2>
+          <p class="ms-3">Are you often worried about your family's finances?</p>
+          <p class="ms-3">If so, then perhaps you would relate to jho Valera</p>
+          <p class="ms-3">Like you, Jho felt all the worries when she lost her jobfor 4 years because of bankruptcy. She was her family's breadwinner.
+            Losing her job meant she could not providefor her loved ones anymore. Beacuse of this, she becamedepressedand started having
+            anxiety attacks.
+          </p>
+          <button class="myBtn p-2 ms-3">Learn More</button>
+        </div>
+
+        <div class="col-md-6 d-flex justify-content-center align-items-center ms-5" id="money-sample"></div>
+  </div>
+  <section style="background-color:#cfba51;" class="mt-5 d-flex p-5">
+    <img src="https://www.usnews.com/object/image/00000183-a98f-d350-ad83-bf9f51590000/gettyimages-1362265067.jpg?update-time=1664997170771&size=responsive640">
+    <div>
+      <h1 class="ps-5">We can help you just that...</h1>
+      <p class="p-5">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quod a recusandae quia qui necessitatibus quidem,
+        accusamus minima rem nulla exercitationem culpa magni perspiciatis sint non officiis hic, incidunt delectus ad ducimus,
+        ipsum blanditiis quae deleniti? Consectetur, voluptatem? Fugiat, quasi? Minima dolore neque saepe, ipsum qui amet cum asperiores delectus.
+      </p>
+      <button class="myBtn ms-5 p-2">Get a quote</button>
+    </div>
+  </section>
+  <footer>
+    <div class="row">
+      <div class="col testimony">
+          <h2 class="mt-5 mb-5 d-flex justify-content-center">Client Testimonials</h2>
+      </div>
+     </div>
+     <div class="row testimony-row d-flex justify-content-center">
+      <div class="col-md-4 border border-2 m-4  p-3" style="width:25vw;">
+          <div class="box">
+              <p>"A massive thank you for all of your help
+                  collecting the data points and the content
+                  for the board meeting. I was really pleased
+                  with how the presentation landed and hung together.
+                   It wouldn/t have been as slick if it wasn't for your assistance and
+                   input. Thank you."
+                   <br>
+                   <br>
+                   - Noel Armstrong
+              </p>
+          </div>
+      </div>
+
+      <div class="col-md-4  border border-2 m-4  p-3" style="width:25vw;">
+          <div class="box">
+              <p>"A massive thank you for all of your help
+                  collecting the data points and the content
+                  for the board meeting. I was really pleased
+                  with how the presentation landed and hung together.
+                   It wouldn/t have been as slick if it wasn't for your assistance and
+                   input. Thank you."
+                   <br>
+                   <br>
+                   - Noel Armstrong
+              </p>
+          </div>
+      </div>
+
+      <div class="col-md-4  border border-2 m-4  p-3" style="width:25vw;">
+          <div class="box">
+              <p>"A massive thank you for all of your help
+                  collecting the data points and the content
+                  for the board meeting. I was really pleased
+                  with how the presentation landed and hung together.
+                   It wouldn/t have been as slick if it wasn't for your assistance and
+                   input. Thank you."
+                   <br>
+                   <br>
+                   - Noel Armstrong
+              </p>
+          </div>
+      </div>
+  </footer>
+</body>
+</html>
